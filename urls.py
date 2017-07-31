@@ -16,4 +16,5 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^book/list/$','blog.list.index'),
     url(r'^index/reg/$','mem.views.index'),
+    url(r''),
 )
