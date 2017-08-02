@@ -13,7 +13,7 @@ def index(req):
 
         if form.is_valid():
             print form.cleaned_data
-            fp = file('/home/kjw/yssite/upload/'+form.cleaned_data['headImg'].name,'wb')
+            fp = file('/home/lmb/yssite/upload/'+form.cleaned_data['headImg'].name,'wb')
             s = form.cleaned_data['headImg'].read()
             fp.write(s)
             fp.close()
