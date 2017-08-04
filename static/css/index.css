@@ -1,0 +1,6 @@
+body
+  {
+  background:url(/static/images/timg.gif);
+  }
+.author{background:#cccccc; width:200px;}
+.book{background:#dddddd; width:200px;display:block;}

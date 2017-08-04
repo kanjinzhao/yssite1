@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="/static/css/index.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 <h1>测试</h1>
 <div>
-    {{authors}}
+    {{books}}
 </div>
 
 {% for zuozhe in authors %}
-<li>{{zuozhe.name}}</li>
+<li class="author">{{zuozhe.name}}</li>
 
     {% for book in zuozhe.books_set.all %}
-        <span>&nbsp;&nbsp;&nbsp;{{book}}</span>
+        <span class="book">&nbsp;&nbsp;&nbsp;{{book}}</span>
     {% endfor %}
 
-    {% for bookImg in zuozhe.books_set.all %}
-        -IMG:<span>{{bookImg}}</span>
-    {% endfor %}
 {% endfor %}
+<!--<img src="/static/123_6.jpg">-->
 </body>
 </html>
